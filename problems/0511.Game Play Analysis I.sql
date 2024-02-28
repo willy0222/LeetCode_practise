@@ -21,13 +21,11 @@ Output:
 | 3         | 2016-03-02  |
 +-----------+-------------+
 
-```MySQL
-# Write your MySQL query statement below
 
+# Write your MySQL query statement below
 # as 建立 min(event_date) 欄位的別名，使可讀性更強
 # group by 相同的 player_id
 
 select player_id, min(event_date) as first_login
 from Activity
 group by player_id
-```
