@@ -1,5 +1,11 @@
-Example 1:
+Report for every three line segments whether they can form a triangle.
 
+Return the result table in any order.
+
+The result format is in the following example.
+
+Example 1:
+```sql
 Input: 
 Triangle table:
 +----+----+----+
@@ -15,8 +21,8 @@ Output:
 | 13 | 15 | 30 | No       |
 | 10 | 20 | 15 | Yes      |
 +----+----+----+----------+
-
-
+```
+```sql
 # Write your MySQL query statement below
 select x, y, z, 
 case 
@@ -24,3 +30,4 @@ case
     else 'No'
 end as triangle
 from Triangle
+```
